@@ -1,7 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import arabic_reshaper
-from bidi.algorithm import get_display
 import tkinter as tk
 from tkinter import ttk
 
