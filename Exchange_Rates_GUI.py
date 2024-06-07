@@ -18,17 +18,15 @@ def convert_currency():
     for i in range(len(price)):
         result_label.config(text=price[i].text)
 
-# إعداد نافذة التطبيق
+
 app = tk.Tk()
 app.title("محول العملات")
 app.iconbitmap("C:\\Users\\LAPTOPS HOUSE\\Desktop\\Mohaned\\Python\\مشاريع\\dollar.ico")
 
-# إعداد المتغيرات
 from_currency_var = tk.StringVar()
 to_currency_var = tk.StringVar()
 language_var = tk.StringVar()
 
-# إعداد واجهة المستخدم
 from_currency_label = ttk.Label(app, text="ادخل رمز العملة الأولى:")
 from_currency_label.grid(row=0, column=0, padx=10, pady=10)
 from_currency_entry = ttk.Entry(app, textvariable=from_currency_var)
